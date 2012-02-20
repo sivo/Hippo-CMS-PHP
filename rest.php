@@ -1,7 +1,7 @@
 <?php
 echo '<h1>Using REST API</h1>';
 
-if($_GET['detail'] == null) {
+if(!isset($_GET['detail'])) {
   $url = 'http://www.demo.onehippo.com/restapi/topproducts?_type=xml&sortby=hippogogreen%3Arating&sortdir=descending&max=4';
   
   // Using cURL to get the response
